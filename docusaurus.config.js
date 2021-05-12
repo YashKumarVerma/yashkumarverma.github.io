@@ -10,7 +10,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Hey there !',
-  tagline: "I'm Yash",
+  tagline: "I'm Yash Kumar Verma",
   url: 'https://yashkumarverma.github.io/projects',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -28,7 +28,7 @@ module.exports = {
       items: [
         {to: 'about-me', label: 'About Me', position: 'left'},
         {
-          to: 'projects/',
+          to: 'docs/',
           activeBasePath: 'projects',
           label: 'Projects',
           position: 'left',
@@ -46,7 +46,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: ' ',
+          title: 'Site',
           items: [
             {
               label: 'Blog',

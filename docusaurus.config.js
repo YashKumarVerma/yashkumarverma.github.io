@@ -9,34 +9,35 @@
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Hey there !',
+  tagline: "I'm Yash",
+  url: 'https://yashkumarverma.github.io/projects',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Yash', // Usually your GitHub org/user name.
+  projectName: 'projects', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Facebook Project',
+      title: 'Home',
       logo: {
-        alt: 'My Facebook Project Logo',
+        alt: 'Projects by Yash Kumar Verma',
         src: 'img/logo.svg',
       },
       items: [
+        {to: 'about-me', label: 'About Me', position: 'left'},
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          to: 'projects/',
+          activeBasePath: 'projects',
+          label: 'Projects',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/yashkumarverma',
+          label: 'github/YashKumarVerma',
           position: 'right',
         },
       ],
@@ -45,67 +46,44 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Learn',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
+          title: ' ',
           items: [
             {
               label: 'Blog',
               to: 'blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'About Me',
+              to: 'about-me/',
+            },
+            {
+              label: 'Projects List',
+              to: 'list/',
             },
           ],
         },
         {
-          title: 'Legal',
-          // Please do not remove the privacy and terms, it's a legal requirement.
+          title: ' ',
+          items: [],
+        },
+        {
+          title: ' ',
           items: [
             {
-              label: 'Privacy',
-              href: 'https://opensource.facebook.com/legal/privacy/',
+              label: 'Twitter',
+              href: 'https://twitter.com/yash_kr_verma',
             },
             {
-              label: 'Terms',
-              href: 'https://opensource.facebook.com/legal/terms/',
+              label: 'E-Mail',
+              href: 'mailto:yk.verma2000@gmail.com',
             },
             {
-              label: 'Data Policy',
-              href: 'https://opensource.facebook.com/legal/data-policy/',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/yash-kumar-verma/',
             },
             {
-              label: 'Cookie Policy',
-              href: 'https://opensource.facebook.com/legal/cookie-policy/',
+              label: 'Github',
+              href: 'https://github.com/yashkumarverma/',
             },
           ],
         },
@@ -116,7 +94,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} YashKumarVerma. Built with Docusaurus.`,
     },
   },
   presets: [

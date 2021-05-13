@@ -9,8 +9,8 @@
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Hey there !',
-  tagline: "I'm Yash Kumar Verma",
+  title: 'Yash Kumar Verma',
+  tagline: 'Hey There !',
   url: 'https://yashkumarverma.github.io/projects',
   baseUrl: '/',
   onBrokenLinks: 'throw',

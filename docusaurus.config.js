@@ -88,13 +88,13 @@ module.exports = {
           ],
         },
       ],
-      logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'img/oss_logo.png',
-        href: 'https://opensource.facebook.com',
-      },
+      //   logo: {
+      //     alt: 'Facebook Open Source Logo',
+      //     src: 'img/oss_logo.png',
+      //     href: 'https://opensource.facebook.com',
+      //   },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} YashKumarVerma. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} YashKumarVerma. `,
     },
   },
   presets: [

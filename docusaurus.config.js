@@ -11,13 +11,13 @@
 module.exports = {
   title: 'Yash Kumar Verma',
   tagline: 'Hey There !',
-  url: 'https://yashkumarverma.github.io/projects',
+  url: 'https://yashkumarverma.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Yash', // Usually your GitHub org/user name.
-  projectName: 'projects', // Usually your repo name.
+  organizationName: 'YashKumarVerma', // Usually your GitHub org/user name.
+  projectName: 'yashkumarverma.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Home',

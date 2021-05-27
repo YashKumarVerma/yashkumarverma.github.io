@@ -10,6 +10,6 @@
 module.exports = {
   someSidebar: {
     Works: ['index', 'open-source'],
-    Features: ['mdx'],
+    // Features: ['mdx'],
   },
 };

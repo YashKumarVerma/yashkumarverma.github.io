@@ -35,6 +35,8 @@ I learned a lot about writing scalable applications, how to work with large code
 
 As of now, I lead [ACM-VIT](https://acmvit.in/), one of the most active student chapter affiliated to the prestigious [Association for Computing Machinery](https://www.acm.org/) as Director of Technical Operations / Technical Director.
 
+Current: I am working for [caMicroScope](http://camicroscope.org/) under Google Summer of Code (**GSoC**). Details of the projects are [shared here](https://summerofcode.withgoogle.com/projects/#5718561483390976).
+
 ## There's More
 This was a general overview of my career in the field of technology, and a lot of details have not been mentioned here. This site has (would have) a separate section of My Experiences and Projects.
 

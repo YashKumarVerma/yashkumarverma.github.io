@@ -9,6 +9,79 @@ This page contains the list of almost all the projects built by me. All projects
 
 In order to easily filter projects based on tech stack, please checkout the [Filter](https://github.com/yashkumarverma/) page (under construction). If while opening the link of some project, you get a 404, it means that the codebase is private (mainly due to academic submissions). These are made public as soon as the semester in college ends.
 
+
+
+## Hentry
+Hentry, is a hackathon sentry that allows organizers to provide a fair competing platform in the online events. Since plagiarism and re-use are the major problems in such submissions which ruins the spirit of hackathons, It utilizes intelligent algorithms to calculate project entropy and snapshots of participants' projects in real-time and visualizes the same for the organizers as a live graph in a pleasant user interface.
+
+A detailed documentation with video introduction on [hentry-server](https://github.com/YashKumarVerma/hentry-server)
+- [**Hentry Server**](https://github.com/YashKumarVerma/hentry-server) : web server written in TypeScript to act as the service to expose data for hentry-dashboards. Provides routes which utilize Redis-JSON and Redis-TimesSeries to return data for business logic. Handle user creation, team creation, initial dashboard data fetch and polling updates for live graphs.
+- [**Hentry Client**](https://github.com/YashKumarVerma/hentry-client) :  CLI written in Golang utilizing go-routines for performance :zap: which calculates project entropy and snapshots and emits them to hentry-feeder
+- [**Hentry Feeder**](https://github.com/YashKumarVerma/hentry-feeder) : micro service written in GoLang utilizing go-routines for performance, exposes a simple HTTP server to accept requests from henry-client instances running on participants' devices and write data to Redis TimeSeries Database.
+- [**Hentry Dashboard**](https://github.com/YashKumarVerma/hentry-dashboard) : a responsive and dynamic single page application build using React and TailWind CSS, designed in a monochrome and minimal UI to focus on important data. Also provisions realtime graphs which render live feed of project status.
+
+## UniAuth
+UniAuth is a super ambitious project written as an open source alternative of proprietary SSO services like Google/Facebook/Microsoft SignIn, built around the central idea of privacy, security and consent. It allows the users to maintain a profile with the details they wish, get them verified, completely isolated from their social accounts. 
+
+Applications can request specific information from the users while defining their applications, and customize the consent page as per their needs. 
+
+While users get security and privacy, developers get to utilize the client libraries written for more than half a dozen(and counting) frameworks across multiple languages. This allows anyone to integrate UniAuth into the project with minimal changes.
+
+A detailed writeup about each of the component is out of scope of this page, please refer the github organization for more details.
+
+Visit the github organization : [UniAuth](https://github.com/uniauth)
+- https://github.com/UniAuth/uniauth-backend
+- https://github.com/UniAuth/express-middleware
+- https://github.com/UniAuth/http-exception-transformer
+- https://github.com/UniAuth/example-nodejs
+- https://github.com/UniAuth/fiber-middleware
+- https://github.com/UniAuth/uniauth.github.io
+- https://github.com/UniAuth/django-middleware
+- https://github.com/UniAuth/flask-middleware
+- https://github.com/UniAuth/example-flask
+- https://github.com/UniAuth/UniAuth
+- https://github.com/UniAuth/gin-middleware
+- https://github.com/UniAuth/uniauth-passport-strategy
+
+## Full Stack Applications
+- **Executely** : full stack application build during the MLH Fellowship Orientation Hackathon, and bagged the first prize in the same. It allows users (mostly students) to upload picture of their hand-written code and execute without installing any application.
+  - [0.4.1-Execute.ly-server](https://github.com/YashKumarVerma/0.4.1-Execute.ly-server) : server that powers the project, handles data interaction with google cloud and cloud vision APIs, language detection, code execution and OCR processing of the data shared by the frontend.
+  - [0.4.1-Execute.ly-frontend](https://github.com/YashKumarVerma/0.4.1-Execute.ly-frontend) : allows the user to upload an image, crop the required portions of the image, and send data tot he server for processing. Once received, allows the user to edit the code and re-run as required.
+
+- **ACM Reverse Coding** : ReverseReverse Coding is ACM-VIT's premier event, not only by the number of participants, but also by the requirements of the infra to host the entire event.
+  - [**rc-heimdall**](https://github.com/YashKumarVerma/rc-heimdall) : Heimdall is the main micro-service that is responsible for user-management, ingestion of problems from endpoints, providing API endpoints for main user interface, interaction with task-runners, code submission and evaluation. Since this service basically handles all requests from the client and acts as a gate-keeper, it's named Heimdall.
+  - https://github.com/YashKumarVerma/rc-broadcaster : Broadcaster is a serverless function written to run on the firebase cloud to generate download links of the questions uploaded by the problem setters in the firebase console. This eliminates firebase as a dependency from other services, and also automatically scales as per the traffic experienced by the system.
+  - https://github.com/YashKumarVerma/rc-ide : Simple IDE built on ReactJS to act as an interface to rc-task-runner, and run programs on the task runner. This allows the participants to execute the binaries on the cloud and avoid downloading them on their local systems.
+  - https://github.com/YashKumarVerma/rc-task-runner : A bare bone web server which utilizes go-routines and concurrency to execute binaries on the cloud and return the result to the user in realtime. These are written to be run in clusters/pods while sitting behind a load balancer to distribute the workload and give near-realtime results.
+
+- **Coalaborate**: since during the pandemic time, all activities have moved online, including team collaboration, academics, research and communication. Coalaborate allows people to use the internet as their notebook, and allows people in the same team to drop comments on any website. Teams can communicate, drop notes, questions and solve queries via the platform. 
+    - https://github.com/YashKumarVerma/coalaborate-backend exposes the API that is consumed by the chrome extension. Internally its written in typescript and uses apache cassandra as the data layer. 
+    - https://github.com/YashKumarVerma/coalaborate-frontend : is a chrome extension which can be installed on browsers written on the chromium engine (Chrome, Edge, Brave etc), and allows the users to drop comments for their team members on any website/webapp.
+
+
+- **Coin360** : coin360 is a popular webapp which shows live data from various crypto currency feeds in realtime. It includes complex visualizations and realtime updates of bulky data. I wrote this simple prototype which demonstrated how a web application can visualize a large dataset (~25+ MB) in batches, by loading only a tiny subset of data on initial load (200-400KB) and polling for updates in batches. This allows the application to run smooth in systems with low resources.
+  - https://github.com/YashKumarVerma/coin360-backend : the backend which uses redis to fetch the large dataset periodically and keep a local index of each of the entry. This allows the frontend to poll for most recent value from the key-value database, and individually update this after processing the bulky dataset. Since this is done on the backend, this does not impact the application's performance.
+  - https://github.com/YashKumarVerma/coin360-frontend : single page application written in React to visualize the coin dashboard, showing currencies and their exchange rates. These are updated in batches, and works fluently on low-end systems.
+
+
+- **Attendance Application** : is a portal written for internal consumption at ACM-VIT that allows the club to quickly create events, sessions and slots for attendance. It provisions a rich REST API that can be used by other clients, like mobile applications or web pages to feed data into the system. All the details are then stored on a central server and used for analytics purposes.
+  - [attendance-frontend](https://github.com/YashKumarVerma/attendance-frontend) : first ReactJS project, consumes the API provided by attendance-backend to visualize a user interface with all features required to operate on the portal.
+  - [attendance-backend](https://github.com/YashKumarVerma/attendance-backend) : first TypeScript project, exposes a REST API that is consumed by the frontend to operate on the data points.
+
+
+
+
+- [Octave](https://github.com/YashKumarVerma/Octave) : Octave is a platform written on MERN stack to play the songs as decided by the attendees of an event. Provides a search feature that relies on the spotify API to search for songs, filter based on explicit tag and allows people to request and up-vote the songs. The song at the top of the chart keeps on playing one after the other.
+
+
+- [Dolos](https://github.com/YashKumarVerma/dolos) : A project initiated during HacktoberFest to introduce people to the world of open source. Allows clients to request dummy data in any schema based on their requirements, via simple REST API.
+
+
+- [ACM Recruitment](https://github.com/YashKumarVerma/recruitment-backend): backend service to power the recruitment platform for ACM-VIT. Also facilitates viewing submission of each user and user management.
+
+
+
+
 ## NPM Packages
 - [http-exception-transformer](https://www.npmjs.com/package/http-exception-transformer) : express.js middleware to handle all sorts of errors in the application and generate a suitable response codes alongwith messages for the client. Also allows users to run custom functions when error encountered.  Read More 🔗
 - [@uniauth/express-middleware](https://www.npmjs.com/package/@uniauth/express-middleware) : library to integrate [UniAuth](https://github.com/uniauth) based OAuth servers with applications written in express.js.
@@ -17,7 +90,7 @@ In order to easily filter projects based on tech stack, please checkout the [Fil
 - [@vitspot/vit-registration-number](https://www.npmjs.com/package/@vitspot/vit-registration-number) : A library intended to be used by communities in VIT University, to validate and extract meaningful information from student registration numbers.
 - [javascript-templates](https://www.npmjs.com/package/javascript-templates): a CLI to quickly setup boilerplate for NodeJS Project.
 
-## CLI
+## CLI, Binaries and Libraries
 - [ARQ Simulators](https://github.com/YashKumarVerma/arq-simulators) : Network Simulators written in C++ which demonstrate how the control protocols work in data transmission. Also include features to add noise to the channel and randomly eliminate packets from the medium, just like it happens in real-world.
 
 
@@ -55,7 +128,7 @@ In order to easily filter projects based on tech stack, please checkout the [Fil
 - [Sahayak-BlogGen](https://github.com/YashKumarVerma/Sahayak-BlogGen) : is a learning project built in pre-university years which powered my personal blog at the time. Written in python and supports dynamic routing for blog posts via javascript.
 
 
-## Bots
+## Bots and Automation
 - [FormatCodeBot](https://github.com/YashKumarVerma/FormatCodeBot) : is a telegram bot which can style javascript code sent by users. Built as a requirement for reviewing code being shared over messaging applications.
 
 
@@ -64,13 +137,13 @@ In order to easily filter projects based on tech stack, please checkout the [Fil
 
 - [yashkumarverma-assistant](https://github.com/YashKumarVerma/yashkumarverma-assistant) : personal github assistant implemented as a github bot that greets new contributors, and drops messages when issues and pull requests change their status. i.e. opened, closed, merged etc.
   
-## WebApps
+## WebApps and PWAs
 - [All Covid Info](https://github.com/YashKumarVerma/all-covid-info-frontend) : a gatsby single page application, which has the ability to install as a PWA and run even without active internet connection to list resources for COVID care.
 
 
 - [Snake-Game](https://github.com/YashKumarVerma/Snake-Game) : A browser game written in high school which resembles the popular snake game. Written in pure HTML, CSS and vanilla JavaScript.
 
-## AI
+## AI and Machine Learning
 - [Wumpus World Simulation](https://github.com/YashKumarVerma/wumpus-world-simulation) : a command line simulator of the famous wumpus world problem which demonstrates how a partially informed agent behaves as obstructions and challenges are presented in random intervals. Written in python, uses unicode emojis to visualize the world.
 
 
@@ -108,56 +181,3 @@ In order to easily filter projects based on tech stack, please checkout the [Fil
 
 ## Mobile Apps
 - [Weather Application](https://github.com/YashKumarVerma/hackathon-apptitude) : a mobile application developed during a hackathon named "Apptitude". The restrictions were well defined and the main challenge was the time frame of the delivery.  
-
-## Full Stack Applications
-- Attendance Application : is a portal written for internal consumption at ACM-VIT that allows the club to quickly create events, sessions and slots for attendance. It provisions a rich REST API that can be used by other clients, like mobile applications or web pages to feed data into the system. All the details are then stored on a central server and used for analytics purposes.
-  - [attendance-frontend](https://github.com/YashKumarVerma/attendance-frontend) : first ReactJS project, consumes the API provided by attendance-backend to visualize a user interface with all features required to operate on the portal.
-  - [attendance-backend](https://github.com/YashKumarVerma/attendance-backend) : first TypeScript project, exposes a REST API that is consumed by the frontend to operate on the data points.
-
-
-- Executely : full stack application build during the MLH Fellowship Orientation Hackathon, and bagged the first prize in the same. It allows users (mostly students) to upload picture of their hand-written code and execute without installing any application.
-  - [0.4.1-Execute.ly-server](https://github.com/YashKumarVerma/0.4.1-Execute.ly-server) : server that powers the project, handles data interaction with google cloud and cloud vision APIs, language detection, code execution and OCR processing of the data shared by the frontend.
-  - [0.4.1-Execute.ly-frontend](https://github.com/YashKumarVerma/0.4.1-Execute.ly-frontend) : allows the user to upload an image, crop the required portions of the image, and send data tot he server for processing. Once received, allows the user to edit the code and re-run as required.
-
-
-- Coalaborate: since during the pandemic time, all activities have moved online, including team collaboration, academics, research and communication. Coalaborate allows people to use the internet as their notebook, and allows people in the same team to drop comments on any website. Teams can communicate, drop notes, questions and solve queries via the platform. 
-    - https://github.com/YashKumarVerma/coalaborate-backend exposes the API that is consumed by the chrome extension. Internally its written in typescript and uses apache cassandra as the data layer. 
-    - https://github.com/YashKumarVerma/coalaborate-frontend : is a chrome extension which can be installed on browsers written on the chromium engine (Chrome, Edge, Brave etc), and allows the users to drop comments for their team members on any website/webapp.
-
-
-- Coin360
-  - https://github.com/YashKumarVerma/coin360-backend
-  - https://github.com/YashKumarVerma/coin360-frontend
-- Octave: https://github.com/YashKumarVerma/Octave
-- Dolos: https://github.com/YashKumarVerma/dolos
-- ACM Recruitments: https://github.com/YashKumarVerma/recruitment-backend
-- ACM Reverse Coding
-  - https://github.com/YashKumarVerma/rc-heimdall
-  - https://github.com/YashKumarVerma/rc-broadcaster
-  - https://github.com/YashKumarVerma/rc-deploy-listener
-  - https://github.com/YashKumarVerma/rc-ide
-  - https://github.com/YashKumarVerma/rc-task-runner
-- VITHack
-  - https://github.com/YashKumarVerma/vithack2020-portal-backend
-  - https://github.com/YashKumarVerma/vithack2020-subscribe-service
-- https://github.com/YashKumarVerma/songs-site
-
-## Team
-- https://github.com/C4-Smoketrees/forum-backend
-- 
-## Hentry
-
-
-## UniAuth
-- https://github.com/UniAuth/uniauth-backend
-- https://github.com/UniAuth/express-middleware
-- https://github.com/UniAuth/http-exception-transformer
-- https://github.com/UniAuth/example-nodejs
-- https://github.com/UniAuth/fiber-middleware
-- https://github.com/UniAuth/uniauth.github.io
-- https://github.com/UniAuth/django-middleware
-- https://github.com/UniAuth/flask-middleware
-- https://github.com/UniAuth/example-flask
-- https://github.com/UniAuth/UniAuth
-- https://github.com/UniAuth/gin-middleware
-- https://github.com/UniAuth/uniauth-passport-strategy

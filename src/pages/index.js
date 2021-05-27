@@ -17,32 +17,32 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'I build',
+    imageUrl: 'img/undraw_code.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I believe in problem solving, and build projects that solve real-world
+        problems. I love web technologies, CLIs, mobile apps and DevOps.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'My Portfolio',
+    imageUrl: 'img/undraw_profile.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        I build projects, write blogs, and contribute to open source. Read more
+        about me, view my projects, or read about my experiences.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Open Source',
+    imageUrl: 'img/undraw_git.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Active member of open source community, experience of GSoC, GSoD, GCI,
+        MLH Fellowship, Coding Blocks BOSS and other programs.
       </>
     ),
   },
@@ -80,7 +80,7 @@ export default function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('about-me/')}>
               Get Started
             </Link>
           </div>

@@ -58,7 +58,7 @@ module.exports = {
             },
             {
               label: 'Projects List',
-              to: 'list/',
+              to: 'docs/',
             },
           ],
         },
@@ -78,12 +78,12 @@ module.exports = {
               href: 'mailto:yk.verma2000@gmail.com',
             },
             {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/yash-kumar-verma/',
-            },
-            {
               label: 'Github',
               href: 'https://github.com/yashkumarverma/',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/in/yash-kumar-verma/',
             },
           ],
         },

@@ -1,0 +1,1 @@
+(self.webpackChunkprojects=self.webpackChunkprojects||[]).push([[926],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"GSoC 2021, how\'s it different?","permalink":"/blog/getting-started-with-gsoc-2021"},{"title":"Welcome","permalink":"/blog/welcome"}]}')}}]);

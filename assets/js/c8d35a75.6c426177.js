@@ -1,0 +1,1 @@
+(self.webpackChunkprojects=self.webpackChunkprojects||[]).push([[871],{5004:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"cb-boss","name":"cb-boss","count":1,"permalink":"/blog/tags/cb-boss"}')}}]);

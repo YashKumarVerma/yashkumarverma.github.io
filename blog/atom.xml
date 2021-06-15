@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yashkumarverma.github.io/blog</id>
     <title>Yash Kumar Verma Blog</title>
-    <updated>2021-05-27T00:00:00.000Z</updated>
+    <updated>2021-06-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yashkumarverma.github.io/blog"/>
     <subtitle>Yash Kumar Verma Blog</subtitle>
     <icon>https://yashkumarverma.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[GSoC 2021, how's it different?]]></title>
+        <id>getting-started-with-gsoc-2021</id>
+        <link href="https://yashkumarverma.github.io/blog/getting-started-with-gsoc-2021"/>
+        <updated>2021-06-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Google Summer of Code, or GSoC as most people like to call it has just started, and I am amazingly excited for it. Although this is not the first time I am participating in any open source program, but it's my first time with GSoC. So naturally there's this question that often people ask: how is GSoC different from others?]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>

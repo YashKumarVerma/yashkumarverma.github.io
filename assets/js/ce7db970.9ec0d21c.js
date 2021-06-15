@@ -1,0 +1,1 @@
+(self.webpackChunkprojects=self.webpackChunkprojects||[]).push([[642],{1220:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"gci","name":"gci","count":1,"permalink":"/blog/tags/gci"}')}}]);

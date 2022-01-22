@@ -16,8 +16,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'YashKumarVerma', // Usually your GitHub org/user name.
-  projectName: 'yashkumarverma.github.io', // Usually your repo name.
+  organizationName: 'YashKumarVerma',
+  projectName: 'yashkumarverma.github.io',
   themeConfig: {
     navbar: {
       title: 'Home',
@@ -36,7 +36,7 @@ module.exports = {
         { to: 'blog', label: 'Blog', position: 'left' },
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://github.com/yashkumarverma',
+          href: 'https://bit.ly/yashkumarverma',
           label: 'Resume',
           position: 'right',
         },

@@ -7,13 +7,14 @@
  * @format
  */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { StackOverflowFeatureBar } from "./../../components/homepage/stackOverflow"
 
 const features = [
   {
@@ -48,7 +49,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -65,7 +66,8 @@ function Feature({imageUrl, title, description}) {
 
 export default function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -87,11 +89,14 @@ export default function Home() {
         </div>
       </header>
       <main>
+        <div className='container'>
+          <StackOverflowFeatureBar />
+        </div>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map(({title, imageUrl, description}) => (
+                {features.map(({ title, imageUrl, description }) => (
                   <Feature
                     key={title}
                     title={title}

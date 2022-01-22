@@ -1,0 +1,14 @@
+{
+  "unversionedId": "ref",
+  "id": "ref",
+  "isDocsHomePage": false,
+  "title": "ref",
+  "description": "You can write content using GitHub-flavored Markdown syntax.",
+  "source": "@site/docs/ref.md",
+  "sourceDirName": ".",
+  "slug": "/ref",
+  "permalink": "/docs/ref",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/ref.md",
+  "version": "current",
+  "frontMatter": {}
+}

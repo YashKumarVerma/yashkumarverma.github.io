@@ -1,0 +1,240 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionEditUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs",
+          "versionEditUrlLocalized": "https://github.com/facebook/docusaurus/edit/master/website/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/yash/Desktop/works/yashkumarverma.github.io/sidebars.js",
+          "contentPath": "/home/yash/Desktop/works/yashkumarverma.github.io/docs",
+          "contentPathLocalized": "/home/yash/Desktop/works/yashkumarverma.github.io/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "index",
+          "sidebars": {
+            "someSidebar": [
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Works",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "index"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "open-source"
+                  }
+                ]
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/": "someSidebar",
+            "/docs/asd": "someSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "doc2",
+              "id": "doc2",
+              "isDocsHomePage": false,
+              "title": "Document Number 2",
+              "description": "This is a link to another document. This is a link to an external page.",
+              "source": "@site/docs/doc2.md",
+              "sourceDirName": ".",
+              "slug": "/doc2",
+              "permalink": "/docs/doc2",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/doc2.md",
+              "version": "current",
+              "frontMatter": {
+                "id": "doc2",
+                "title": "Document Number 2"
+              }
+            },
+            {
+              "unversionedId": "doc3",
+              "id": "doc3",
+              "isDocsHomePage": false,
+              "title": "This is Document Number 3",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "source": "@site/docs/doc3.md",
+              "sourceDirName": ".",
+              "slug": "/doc3",
+              "permalink": "/docs/doc3",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/doc3.md",
+              "version": "current",
+              "frontMatter": {
+                "id": "doc3",
+                "title": "This is Document Number 3"
+              }
+            },
+            {
+              "unversionedId": "index",
+              "id": "index",
+              "isDocsHomePage": false,
+              "title": "Index",
+              "description": "This page contains the list of almost all the projects built by me. All projects have a dedicated page about them, which contains other relevant details about the project.",
+              "source": "@site/docs/index.md",
+              "sourceDirName": ".",
+              "slug": "/",
+              "permalink": "/docs/",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/index.md",
+              "version": "current",
+              "sidebar_label": "Index of Projects",
+              "frontMatter": {
+                "id": "index",
+                "title": "Index",
+                "sidebar_label": "Index of Projects",
+                "slug": "/"
+              },
+              "sidebar": "someSidebar",
+              "next": {
+                "title": "Open Source",
+                "permalink": "/docs/asd"
+              }
+            },
+            {
+              "unversionedId": "mdx",
+              "id": "mdx",
+              "isDocsHomePage": false,
+              "title": "Powered by MDX",
+              "description": "You can write JSX and use React components within your Markdown thanks to MDX.",
+              "source": "@site/docs/interactiveDoc.mdx",
+              "sourceDirName": ".",
+              "slug": "/mdx",
+              "permalink": "/docs/mdx",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/interactiveDoc.mdx",
+              "version": "current",
+              "frontMatter": {
+                "id": "mdx",
+                "title": "Powered by MDX"
+              }
+            },
+            {
+              "unversionedId": "open-source",
+              "id": "open-source",
+              "isDocsHomePage": false,
+              "title": "Open Source",
+              "description": "I have contributed to the following organizations. Detailed write-ups soon.",
+              "source": "@site/docs/open-source.md",
+              "sourceDirName": ".",
+              "slug": "/asd",
+              "permalink": "/docs/asd",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/open-source.md",
+              "version": "current",
+              "sidebar_label": "Open Source",
+              "frontMatter": {
+                "id": "open-source",
+                "title": "Open Source",
+                "sidebar_label": "Open Source",
+                "slug": "/asd"
+              },
+              "sidebar": "someSidebar",
+              "previous": {
+                "title": "Index",
+                "permalink": "/docs/"
+              }
+            },
+            {
+              "unversionedId": "ref",
+              "id": "ref",
+              "isDocsHomePage": false,
+              "title": "ref",
+              "description": "You can write content using GitHub-flavored Markdown syntax.",
+              "source": "@site/docs/ref.md",
+              "sourceDirName": ".",
+              "slug": "/ref",
+              "permalink": "/docs/ref",
+              "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/ref.md",
+              "version": "current",
+              "frontMatter": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2021-05-27-welcome.md",
+            "source": "@site/blog/2021-05-27-welcome.md",
+            "title": "Welcome",
+            "description": "Welcome to my blog. This is where I write about my opinions and experiences about technology, education, new developments and other interesting topics.",
+            "date": "2021-05-27T00:00:00.000Z",
+            "formattedDate": "May 27, 2021",
+            "tags": [
+              {
+                "label": "meta",
+                "permalink": "/blog/tags/meta"
+              }
+            ],
+            "readingTime": 0.18,
+            "truncated": false
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 1,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "welcome"
+          ]
+        }
+      ],
+      "blogTags": {
+        "meta": {
+          "name": "meta",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/meta"
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "mdx",
+        "permalink": "/about-me",
+        "source": "@site/src/pages/about-me.md"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

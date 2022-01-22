@@ -4,16 +4,9 @@
         <title>Yash Kumar Verma Blog</title>
         <link>https://yashkumarverma.github.io/blog</link>
         <description>Yash Kumar Verma Blog</description>
-        <lastBuildDate>Tue, 15 Jun 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 May 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <item>
-            <title><![CDATA[GSoC 2021, how's it different?]]></title>
-            <link>https://yashkumarverma.github.io/blog/getting-started-with-gsoc-2021</link>
-            <guid>getting-started-with-gsoc-2021</guid>
-            <pubDate>Tue, 15 Jun 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Google Summer of Code, or GSoC as most people like to call it has just started, and I am amazingly excited for it. Although this is not the first time I am participating in any open source program, but it's my first time with GSoC. So naturally there's this question that often people ask: how is GSoC different from others?]]></description>
-        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://yashkumarverma.github.io/blog/welcome</link>

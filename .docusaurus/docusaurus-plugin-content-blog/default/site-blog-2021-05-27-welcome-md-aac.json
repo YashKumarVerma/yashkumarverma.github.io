@@ -1,0 +1,17 @@
+{
+  "permalink": "/blog/welcome",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/blog/blog/2021-05-27-welcome.md",
+  "source": "@site/blog/2021-05-27-welcome.md",
+  "title": "Welcome",
+  "description": "Welcome to my blog. This is where I write about my opinions and experiences about technology, education, new developments and other interesting topics.",
+  "date": "2021-05-27T00:00:00.000Z",
+  "formattedDate": "May 27, 2021",
+  "tags": [
+    {
+      "label": "meta",
+      "permalink": "/blog/tags/meta"
+    }
+  ],
+  "readingTime": 0.18,
+  "truncated": false
+}

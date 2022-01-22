@@ -1,0 +1,25 @@
+{
+  "unversionedId": "index",
+  "id": "index",
+  "isDocsHomePage": false,
+  "title": "Index",
+  "description": "This page contains the list of almost all the projects built by me. All projects have a dedicated page about them, which contains other relevant details about the project.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/index.md",
+  "version": "current",
+  "sidebar_label": "Index of Projects",
+  "frontMatter": {
+    "id": "index",
+    "title": "Index",
+    "sidebar_label": "Index of Projects",
+    "slug": "/"
+  },
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Open Source",
+    "permalink": "/docs/asd"
+  }
+}

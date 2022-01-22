@@ -1,1 +1,0 @@
-(self.webpackChunkprojects=self.webpackChunkprojects||[]).push([[219],{3228:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"gsod","name":"gsod","count":1,"permalink":"/blog/tags/gsod"}')}}]);

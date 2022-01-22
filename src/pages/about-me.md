@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 # Hello there ! I'm Yash
 
-I’m Yash Kumar Verma, a second-year undergraduate student at VIT University, India. have been involved in the world of open-source since I was 15y/o.
+I’m Yash Kumar Verma, a third-year undergraduate student at VIT University, India. have been involved in the world of open-source since I was 15y/o.
 
 ## Early Days : Baby Steps
 I started my journey with [FOSSASIA](https://fossasia.org/) and was an active contributor whilst participating in Google CodeIn ([finalist in 2017](https://opensource.googleblog.com/2018/01/google-code-in-2017-winners.html)) for three years. I worked on numerous projects, found bugs & submitted improvements.
@@ -42,9 +42,9 @@ During all this, college was going in parallel, and during final examinations I 
 ## Things change a bit : Year 3, Semester 5/8
 I got introductory call from fampay just before my last exam, and was required to submit my internship task the next day. I built it, explored a new database while doing so - and after about three interviews, [**I got to intern at fampay**](https://fampay.in/). Parallel to this, I was working on my GSoC project, and companies had started coming to college to hire students for the next summer (summer of 2022).
 
-With GSoC ending, college, internship, college interviews, and shifting to Bareilly in parallel, I faced a small health issue, and I had to resign from the internship after 7 days, just to find time to rest and take care of myself. fast forward 25 days passed.
+With GSoC ending, college, internship, college interviews, and shifting to Bareilly in parallel, I faced a small health issue, and I had to resign from the internship after 7 days, just to find time to rest and take care of myself. fast forward 25 days.
 
-I broke the flow, called up the HR at fampay and if I could join back. Thanks to the team at fampay, I joined work the very next monday :smile:.
+I broke the flow, called up the HR at fampay, asked if I could join back. Thanks to the team at fampay, I joined work the very next monday :smile:.
 
 During the internship, I got to learn two new technologies, [django](https://www.djangoproject.com/) and [postgres](https://www.postgresql.org), explored AWS, and wrote one feature from scratch. I also worked on [UPI](https://www.npci.org.in/what-we-do/upi/product-overview) and payment gateways, to sum it up: it was a **nexy level experience**. During the final exams of semester 5, I had thought of ending my internship a bit early, but decided to stick with it deal with it. I was offered to extend my internship, which I did. anyways, results are in **college GPA stands at 9.34**
 

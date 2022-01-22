@@ -10,7 +10,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Yash Kumar Verma',
-  tagline: 'Hey There !',
+  tagline: 'building backend at fampay, in love with FinTech',
   url: 'https://yashkumarverma.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -26,15 +26,20 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: 'about-me', label: 'About Me', position: 'left'},
+        { to: 'about-me', label: 'About Me', position: 'left' },
         {
           to: 'docs/',
           activeBasePath: 'projects',
           label: 'Projects',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'blog', label: 'Blog', position: 'left' },
         // Please keep GitHub link to the right for consistency.
+        {
+          href: 'https://github.com/yashkumarverma',
+          label: 'Resume',
+          position: 'right',
+        },
         {
           href: 'https://github.com/yashkumarverma',
           label: 'github/YashKumarVerma',
@@ -95,6 +100,16 @@ module.exports = {
       //   },
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} YashKumarVerma. `,
+    },
+    themeConfig: {
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
     },
   },
   presets: [
